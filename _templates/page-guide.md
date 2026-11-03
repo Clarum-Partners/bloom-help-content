@@ -1,24 +1,33 @@
 ---
-title: 
+id:                # matches filename, e.g. survey-management-owner
 type: page-guide
-role: 
-page: 
-sources: []   # files in facts/
-last_reviewed: 
+title:             # page name exactly as shown in the app
+route:             # from help-inventory.md
+roles: []          # school-owner | hr | direct-report
+tasks: []          # task ids
+status: draft
+last_verified:
 ---
 
 # {Page name}
 
-{One sentence: what this page is for and who uses it.}
+## What this page is for
 
-## What you'll see
-
-- **{Section/element}** — {what it shows or does}
+{One or two sentences on the user's goal here, not the feature.}
 
 ## What you can do here
 
-- [{Task}](../tasks/{task-file}.md)
+- [{Verb phrase task title}](../tasks/{task-id}.md)
+- [{Verb phrase task title}](../tasks/{task-id}.md)
 
-## Related
+## Statuses you'll see
 
-- [{FAQ}](../faqs/{faq-file}.md)
+| Status         | What it means           |
+|----------------|-------------------------|
+| **{Status}**   | {Plain-language meaning} |
+
+## Before you start
+
+{Omit this section if there is nothing to set up first.}
+
+- {Prerequisite}

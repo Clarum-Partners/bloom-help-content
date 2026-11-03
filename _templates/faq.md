@@ -1,19 +1,13 @@
 ---
-title: 
+id:                # matches filename, named after the question
 type: faq
-role: 
-sources: []   # files in facts/
-last_reviewed: 
+question:          # as a user would ask it
+roles: []          # school-owner | hr | direct-report
+routes: []         # every route this question applies to
+tags: []
+related: []        # task ids for full steps
+status: draft
+last_verified:
 ---
 
-# {Question, as the user would ask it}
-
-{Direct answer in one or two sentences.}
-
-## Common causes
-
-- **{Cause}** — {how to fix it}
-
-## Still stuck?
-
-{Where to get help.}
+{1–3 sentence answer.} [{Task title}](../tasks/{task-id}.md)

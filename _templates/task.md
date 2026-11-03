@@ -1,29 +1,31 @@
 ---
-title: 
+id:                # matches filename, e.g. send-surveys-owner
 type: task
-role: 
-sources: []   # files in facts/
-last_reviewed: 
+title:             # verb phrase, e.g. Send surveys to staff
+route:             # from help-inventory.md
+roles: []          # school-owner | hr | direct-report
+related: []        # page-guide, task, and faq ids
+status: draft
+last_verified:
 ---
 
-# {Verb + object, e.g. "Send surveys"}
+# {Verb phrase title}
 
-{One sentence: when and why you'd do this.}
-
-## Before you start
-
-- {Permission, setup, or prerequisite}
+{One sentence: what this gets done for the user.}
 
 ## Steps
 
-1. {Step}
+1. {Step, with **exact UI labels** in bold}
 2. {Step}
 3. {Step}
 
+{7 steps or fewer. If longer, split into separate tasks.}
+
 ## What happens next
 
-{Result the user should expect.}
+{What the user sees and what changes after they finish.}
 
-## Related
+## If something goes wrong
 
-- [{Page guide}](../pages/{page-file}.md)
+**"{Exact error message}"**
+{What it means and how to fix it.}

@@ -1,17 +1,28 @@
 # bloom-help-content
 
-Help content for Bloom.
+Help articles for Bloom, the school HR and performance management platform. Articles appear in the in-app help side panel (the **"?"** button at the bottom right of every page) and will later power a standalone Help Center. All content is written by the Bloom design team.
 
-| Folder        | Contents                                   | Published |
-|---------------|--------------------------------------------|-----------|
-| `pages/`      | Page guides (one per screen, per role)     | Yes       |
-| `tasks/`      | Step-by-step task articles                 | Yes       |
-| `faqs/`       | Single-question troubleshooting articles   | Yes       |
-| `facts/`      | Source fact sheets used to write the above | **Never** |
-| `_templates/` | Starting points for new articles           | No        |
+## Structure
 
-## Naming
+| Path                | Contents                                              | Published |
+|---------------------|-------------------------------------------------------|-----------|
+| `help-inventory.md` | Every user-facing page: route, name, roles, purpose   | No        |
+| `facts/`            | One fact sheet per page, extracted from the Bloom code | **Never** |
+| `pages/`            | Page guides: what a page is for, what you can do there | Yes      |
+| `tasks/`            | Task guides: how to do one specific thing             | Yes       |
+| `faqs/`             | One question per file, tagged by route                | Yes       |
+| `_templates/`       | Starting points for each file type                    | No        |
 
-- Lowercase, hyphen-separated: `survey-management-owner.md`
-- Add a role suffix (`-owner`, `-admin`, …) when content differs by role.
-- FAQs are named after the question: `why-cant-i-send-surveys.md`
+## Audiences
+
+Each article targets roles in its frontmatter: `school-owner` (main focus), `hr`, `direct-report`. Direct reports never see owner or HR content.
+
+## How content gets made
+
+1. Inventory pages and role access.
+2. Extract a fact sheet per page from the Bloom code.
+3. Write page guides, task guides, and FAQs from the fact sheet.
+4. Pat verifies each article in the live app (`draft` → `reviewed` → `verified`).
+5. After each Bloom release, compare changes to fact sheets and update affected articles.
+
+See `CLAUDE.md` for the full conventions and writing rules.
