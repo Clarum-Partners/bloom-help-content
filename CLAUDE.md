@@ -16,9 +16,13 @@ The panel is narrow and users want an answer in seconds. Write for that.
 | `school-owner`  | School owner / leadership    | Main focus |
 | `hr`            | HR staff                     |            |
 | `direct-report` | Staff member being managed   |            |
+| `supervisor`    | Staff member who manages others (has team members) |  |
 
 - Every article lists its roles in frontmatter (`roles: [school-owner]`).
-- **A direct report must never see school-owner or HR content.** Never put `direct-report` on an article that mentions owner/HR-only actions, data, or pages.
+- **A direct report must never see school-owner, HR, or supervisor content.** Never put `direct-report` on an article that mentions owner-, HR-, or supervisor-only actions, data, or pages.
+- `supervisor` covers staff (not the owner) who have people reporting to them. In Bloom this unlocks **Professional Development** (Team View, Approvals) and changes what **My Tasks** and **1:1 Reviews** show. Owner-facing versions of those pages stay `school-owner` articles.
+- One person can hold more than one role: a supervisor is also a direct report, and HR can also be a supervisor. Write each article for the role that needs it; don't repeat direct-report content inside supervisor articles.
+- > **TODO (Pat):** Confirm the side panel shows a user every article matching *any* of their roles (e.g. a supervisor sees both `direct-report` and `supervisor` articles).
 - If a task works *identically* for two roles, one article can list both. If *anything* differs (steps, labels, what they can see, what happens next), write separate articles.
 - If you can't confirm a role can see something, say so explicitly (a TODO for Pat) — don't assume.
 
@@ -92,7 +96,7 @@ last_verified:
 ```
 
 - `id` matches the filename (without `.md`), kebab-case.
-- Role suffix when an article is role-specific: `-owner` (school-owner), `-hr`, `-direct-report`. Multiple roles: combine (`-owner-hr`). No suffix only when one article covers every role that has access to that task.
+- Role suffix when an article is role-specific: `-owner` (school-owner), `-hr`, `-direct-report`, `-supervisor`. Multiple roles: combine (`-owner-hr`). No suffix only when one article covers every role that has access to that task.
 - `route` is the route as listed in `help-inventory.md`. FAQs use `routes` (a list) because one question can apply to several pages.
 - `tasks` / `related` hold article ids, not paths.
 - `status` is `draft`, `reviewed`, or `verified`. **Claude only ever sets `draft`.** Never change an existing status.

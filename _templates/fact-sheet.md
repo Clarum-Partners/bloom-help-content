@@ -1,7 +1,7 @@
 ---
 page:              # UI page name
 route:
-roles: []          # roles with access (school-owner | hr | direct-report)
+roles: []          # roles with access (school-owner | hr | direct-report | supervisor)
 publish: false     # internal only, never published
 extracted_from_commit:   # Bloom repo commit hash at extraction time
 ---
@@ -21,6 +21,7 @@ extracted_from_commit:   # Bloom repo commit hash at extraction time
 | `school-owner`  |                             | `{path}` |
 | `hr`            |                             | `{path}` |
 | `direct-report` |                             | `{path}` |
+| `supervisor`    |                             | `{path}` |
 
 ## Source files
 

@@ -3,7 +3,7 @@ id:                # matches filename, e.g. send-surveys-owner
 type: task
 title:             # verb phrase, e.g. Send surveys to staff
 route:             # from help-inventory.md
-roles: []          # school-owner | hr | direct-report
+roles: []          # school-owner | hr | direct-report | supervisor
 related: []        # page-guide, task, and faq ids
 status: draft
 last_verified:

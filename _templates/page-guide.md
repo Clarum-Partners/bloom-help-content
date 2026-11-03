@@ -3,7 +3,7 @@ id:                # matches filename, e.g. survey-management-owner
 type: page-guide
 title:             # page name exactly as shown in the app
 route:             # from help-inventory.md
-roles: []          # school-owner | hr | direct-report
+roles: []          # school-owner | hr | direct-report | supervisor
 tasks: []          # task ids
 status: draft
 last_verified:

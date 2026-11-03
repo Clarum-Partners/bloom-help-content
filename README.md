@@ -15,7 +15,7 @@ Help articles for Bloom, the school HR and performance management platform. Arti
 
 ## Audiences
 
-Each article targets roles in its frontmatter: `school-owner` (main focus), `hr`, `direct-report`. Direct reports never see owner or HR content.
+Each article targets roles in its frontmatter: `school-owner` (main focus), `hr`, `direct-report`, `supervisor` (staff who manage others). Direct reports never see owner, HR, or supervisor content.
 
 ## How content gets made
 
