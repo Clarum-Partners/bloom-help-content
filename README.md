@@ -1,6 +1,6 @@
 # bloom-help-content
 
-Help articles for Bloom, the school HR and performance management platform. Articles appear in the in-app help side panel (the **"?"** button at the bottom right of every page) and will later power a standalone Help Center. All content is written by the Bloom design team.
+Help articles for Bloom, the school HR and performance management platform. Articles appear in **Tutorials**, the in-app side panel (opened from the **"?"** button at the bottom right of every page) and will later power a standalone Help Center. All content is written by the Bloom design team.
 
 ## Structure
 

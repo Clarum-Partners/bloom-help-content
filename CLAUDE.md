@@ -4,10 +4,10 @@ Help articles for **Bloom**, a school HR and performance management SaaS platfor
 
 ## Where the content appears
 
-- **In-app side panel (now).** Opens from the existing **"?"** button at the bottom right of every Bloom page, next to **Share Feedback** and **Ask Bloom**. It shows help for the page the user is currently on, so every article is tied to a route.
-- **Standalone Help Center (later).** Will reuse the same files. Write nothing that only makes sense inside the panel.
+- **Tutorials, the in-app side panel (now).** Opens from the existing **"?"** button at the bottom right of every Bloom page, next to **Share Feedback** and **Ask Bloom**. It shows help for the page the user is currently on, so every article is tied to a route.
+- **Standalone Help Center (later).** Will reuse the same files. Write nothing that only makes sense inside Tutorials. (Whether this site is also called Tutorials is undecided.)
 
-The panel is narrow and users want an answer in seconds. Write for that.
+Tutorials is a narrow panel and users want an answer in seconds. Write for that.
 
 ## Audiences (role ids)
 
@@ -22,7 +22,7 @@ The panel is narrow and users want an answer in seconds. Write for that.
 - **A direct report must never see school-owner, HR, or supervisor content.** Never put `direct-report` on an article that mentions owner-, HR-, or supervisor-only actions, data, or pages.
 - `supervisor` covers staff (not the owner) who have people reporting to them. In Bloom this unlocks **Professional Development** (Team View, Approvals) and changes what **My Tasks** and **1:1 Reviews** show. Owner-facing versions of those pages stay `school-owner` articles.
 - One person can hold more than one role: a supervisor is also a direct report, and HR can also be a supervisor. Write each article for the role that needs it; don't repeat direct-report content inside supervisor articles.
-- > **TODO (Pat):** Confirm the side panel shows a user every article matching *any* of their roles (e.g. a supervisor sees both `direct-report` and `supervisor` articles).
+- > **TODO (Pat):** Confirm Tutorials shows a user every article matching *any* of their roles (e.g. a supervisor sees both `direct-report` and `supervisor` articles).
 - If a task works *identically* for two roles, one article can list both. If *anything* differs (steps, labels, what they can see, what happens next), write separate articles.
 - If you can't confirm a role can see something, say so explicitly (a TODO for Pat) — don't assume.
 
