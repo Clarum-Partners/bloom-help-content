@@ -13,6 +13,13 @@ last_verified:
 
 {One sentence: what this gets done for the user.}
 
+## Before you start
+
+{Omit this section if the task needs nothing set up first. List only
+what this task needs; page-wide setup stays in the page guide.}
+
+- {Prerequisite, with a link to the task that sets it up}
+
 ## Steps
 
 1. {Step, with **exact UI labels** in bold}
