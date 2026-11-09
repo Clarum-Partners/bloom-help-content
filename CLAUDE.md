@@ -41,6 +41,7 @@ Tutorials is a narrow panel and users want an answer in seconds. Write for that.
 | `pages/`              | Page guides: what this page is for, what you can do here        | Yes       |
 | `tasks/`              | Task guides: how to do one specific thing                       | Yes       |
 | `faqs/`               | One file per question; shared, searchable pool tagged by route  | Yes       |
+| `images/`             | Screenshots used in task guides, named `{task-id}-step-{n}.png` | Yes       |
 | `_templates/`         | `page-guide.md`, `task.md`, `faq.md`, `fact-sheet.md`           | No        |
 
 Always start a new file by copying the matching template from `_templates/`.
@@ -112,6 +113,26 @@ last_verified:
 - FAQ answers: 1–3 sentences, then link to a task guide for full steps.
 - One idea per paragraph; keep paragraphs short.
 - Link between articles with relative links (`../tasks/send-surveys-owner.md`).
+
+## Screenshots
+
+Screenshots appear in task guides only, directly under the step they illustrate. The side panel shows them as a thumbnail with a caption; users can tap to enlarge.
+
+- **Only where it helps.** Add a screenshot only when a step is hard to follow from text alone (e.g. a panel with several options, a control that's easy to miss). Most steps don't need one.
+- **At most one per step.** Never more than one screenshot per step.
+- **Syntax.** Indent it under its step so it stays part of that list item:
+
+  1. In the **Send Surveys** panel, review the **Respondents** list.
+
+     ![Send Surveys panel with the Respondents list](../images/send-surveys-owner-step-2.png "The Respondents list. Each person gets one email for all their surveys.")
+
+- **Alt text is required.** Describe what the screenshot shows, not what to do with it.
+- **Caption is required.** One short line that tells the reader what to look at.
+- **File names.** `images/{task-id}-step-{n}.png`, matching the task's `id` and the step number. If steps are renumbered, rename the images too.
+- **You never create, edit, or crop image files.** Pat captures every screenshot from the live app. When a step needs one, add the image line with the planned filename, then a TODO directly underneath:
+  `> **TODO (Pat):** Capture screenshot: Send Surveys panel, Respondents list visible.`
+- **Capture rules (for Pat).** Use a demo school with no real staff names, crop to the part of the screen that matters, and make sure it's readable at 400px wide.
+- **Keep them current.** During the Updates step, if a release changes a screen that has a screenshot, list that image as needing a retake alongside the articles that need updating.
 
 ## Accuracy rules
 
