@@ -23,6 +23,10 @@ what this task needs; page-wide setup stays in the page guide.}
 ## Steps
 
 1. {Step, with **exact UI labels** in bold}
+
+   ![{Alt text: what the screenshot shows}](../images/{task-id}-step-{n}.png "{One-line caption}")
+
+2. {Step}
 2. {Step}
 3. {Step}
 
